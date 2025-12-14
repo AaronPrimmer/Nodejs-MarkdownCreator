@@ -64,10 +64,7 @@ const questions = [
   },
 ];
 
-// TODO: Create a function to write the README file.
-// It should take a file name and the data to write.
-// Use fs.writeFile or fs.writeFileSync inside this function.
-
+// Function to write a README file from the responses
 function writeToFile(fileName, data) {
   fs.writeFile(fileName, data, (err) => {
     console.log(err ? err : "README.md generated successfully!");

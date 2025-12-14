@@ -107,28 +107,5 @@ You can find more of my work at [${data.github}](https://github.com/${
 `;
 }
 
-// TODO: Export the generateMarkdown function so index.js can use it.
+// Export the function to be used by other files
 module.exports = generateMarkdown;
-
-// TODO: Complete this function to generate the README markdown string
-// using the data collected from inquirer.
-// The generated README should include sections for:
-//
-// - Title
-// - License badge (if any)
-// - Description
-// - Table of Contents
-// - Installation
-// - Usage
-// - License (if any)
-// - Contributing
-// - Tests
-// - Questions (GitHub + email)
-//
-// Use the acceptance criteria and the professional README guide as a reference.
-
-// MIT	[![License: MIT](img.shields.io)](opensource.org)
-// GPL v3	[![License: GPL v3](img.shields.io)](www.gnu.org)
-// Apache 2.0	[![License: Apache 2.0](img.shields.io)](opensource.org)
-// Mozilla 2.0	[![License: MPL 2.0](img.shields.io)](opensource.org)
-// BSD 3-Clause	[![License: BSD 3-Clause](img.shields.io)](opensource.org)

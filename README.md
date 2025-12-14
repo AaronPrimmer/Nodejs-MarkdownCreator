@@ -19,7 +19,7 @@ Create a readme file from a list of prompts to the user.
 
 ## Installation
 
-To install necessary dependencies, run the following command: ```npm install```
+To install necessary dependencies, run the following command: `npm install`
 
 ## Usage
 
@@ -35,7 +35,7 @@ Anyone can contrinute, email me for more info.
 
 ## Tests
 
-To run tests, run the following command: ```npm test```
+To run tests, run the following command: `npm test`
 
 ## Questions
 
