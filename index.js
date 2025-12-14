@@ -4,7 +4,6 @@
 const fs = require("fs");
 const inq = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-const { validateHeaderName } = require("http");
 
 // Questions array using the inquirer format
 const questions = [
@@ -32,7 +31,14 @@ const questions = [
     type: "list",
     name: "license",
     message: "Choose a license for your project:",
-    choices: ["MIT", "GPLv3", "Apache 2.0", "BSD 3-Clause", "None"],
+    choices: [
+      "MIT",
+      "GPLv3",
+      "Apache 2.0",
+      "Mozilla 2.0",
+      "BSD 3-Clause",
+      "None",
+    ],
   },
   {
     type: "input",
@@ -63,24 +69,17 @@ const questions = [
 // Use fs.writeFile or fs.writeFileSync inside this function.
 
 function writeToFile(fileName, data) {
-  // TODO: Implement this function so it writes "data" to "fileName"
+  fs.writeFile(fileName, data, (err) => {
+    console.log(err ? err : "README.md generated successfully!");
+  });
 }
 
 // prompt the use for the answers from the qustions list and return a response object
-prompt(questions)
-  .then((response) => {})
+inq
+  .prompt(questions)
+  .then((response) => {
+    writeToFile("README.md", generateMarkdown(response));
+  })
   .catch((error) => {
     console.log("Error: ", error);
   });
-
-// TODO: Create an array of questions for user input.
-// Each question should collect part of the README content:
-// - GitHub username
-// - Email address
-// - Project title
-// - Project description
-// - License (choose from a list)
-// - Installation command
-// - Test command
-// - Usage information
-// - Contribution guidelines
