@@ -2,19 +2,19 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
-      return "[![License: MIT](img.shields.io)](https://www.opensource.org)";
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit-0)";
       break;
     case "GPLv3":
-      return "[![License: GPL v3](img.shields.io)](https://www.gnu.org)";
+      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://opensource.org/license/gpl-3-0)";
       break;
     case "Apache 2.0":
-      return "[![License: Apache 2.0](img.shields.io)](https://opensource.org)";
+      return "[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/license/apache-2-0)";
       break;
     case "Mozilla 2.0":
-      return "[![License: MPL 2.0](img.shields.io)](https://opensource.org)";
+      return "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/license/mpl-2-0)";
       break;
     case "BSD 3-Clause":
-      return "[![License: BSD 3-Clause](img.shields.io)](https://opensource.org)";
+      return "[![License: BSD 3-Clause](https://img.shields.io/badge/License-BSD_3--Clause-orange.svg)](https://opensource.org/license/bsd-3-clause-open-mpi)";
       break;
     case "None":
       return "";

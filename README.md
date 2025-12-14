@@ -1,12 +1,12 @@
-# Node.js README.md Creator
+# Node.js README.md Generator
 
 ## License
 
-[![License: MIT](img.shields.io)](https://www.opensource.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit-0)
 
 ## Description
 
-Create a readme file from a list of prompts to the user.
+Create a README.md file from the user's input
 
 ## Table of Contents
 
@@ -19,11 +19,11 @@ Create a readme file from a list of prompts to the user.
 
 ## Installation
 
-To install necessary dependencies, run the following command: `npm install`
+To install necessary dependencies, run the following command: ```npm install```
 
 ## Usage
 
-Everyone may use this project freely.
+Everyone may use.
 
 ## License
 
@@ -31,14 +31,14 @@ This project is licensed under the MIT License.
 
 ## Contributing
 
-Anyone can contrinute, email me for more info.
+Anyone may contribute.
 
 ## Tests
 
-To run tests, run the following command: `npm test`
+To run tests, run the following command: ```npm test```
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at aaronmprimmer@hotmail.com.
+If you have any questions about the repo, open an issue or contact me directly at aaronmprimmer@gmail.com.
 
 You can find more of my work at [AaronPrimmer](https://github.com/AaronPrimmer)
